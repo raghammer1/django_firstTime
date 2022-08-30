@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Realative</h1>
+    <!-- this will automatically find the the basic_apps/other by looking where the other tag is located in the urls file basivcally the one 
+    that says name="other" will be called -->
+    <a href="{% url 'basic_app:other' %}">Go to Other page</a>
+
+    <!-- if you look in the settings file admin is also a prebuilt app and hence its index can be called to do to it's admin login page -->
+    <a href="{% url 'admin:index' %}">Go to ADmin page</a>
+
+    <!-- Now to go back to any page before the current page the one that is already included in the current pages url you can just 
+      directly call it -->
+    <a href="{% url 'index' %}">Go back to Home Page</a>
+  </body>
+</html>

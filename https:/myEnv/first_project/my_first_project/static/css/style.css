@@ -1,0 +1,21 @@
+html {
+  background-image: linear-gradient(to bottom right, pink, red);
+}
+
+h1 {
+  color: white;
+}
+
+img {
+  width: 550px;
+  height: 608px;
+  display: flex;
+  align-items: center;
+  margin: 70px;
+}
+
+table,
+th,
+td {
+  border: 2px solid #111;
+}
